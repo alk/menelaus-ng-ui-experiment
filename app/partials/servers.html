@@ -1,0 +1,21 @@
+this is servers
+<tabset>
+  <tab heading="Active">
+    <table class="table">
+      <tr ng-repeat-start="node in servers.active">
+        <td><a class="glyphicon glyphicon-chevron-right" ng-click="toggleDetails(node.hostname); $event.preventDefault();"></a>{{node.hostname}}</td>
+      </tr>
+      <tr ng-repeat-end ng-if="nodeDetails = detailsOf(node.hostname)">
+        <td>{{nodeDetails | json}}</td>
+      </tr>
+    </table>
+  </tab>
+  <tab heading="Pending">
+    <table class="table">
+      <tr ng-repeat-start="node in servers.pending" ng-repeat-end>
+        <td>{{node.hostname}}</td>
+      </tr>
+    </table>
+  </tab>
+</tabset>
+

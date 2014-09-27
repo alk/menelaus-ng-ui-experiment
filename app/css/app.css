@@ -1,0 +1,8 @@
+/* app css stylesheet */
+/* needed by ui-bootstrap */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+
+/* .spinner-container > .spinner {position: absolute; top: 0; left: 0; right: 0; bottom: 0; vertical-align: middle; text-align: center; background: url(../img/ajax-loader.gif) center 43% no-repeat; z-index: 1;visibility:visible;} */
+.spinner-container > .spinner {position: absolute; top: 0; left: 0; right: 0; bottom: 0; vertical-align: middle; text-align: center; background: url(../img/ajax-loader.gif) repeat; z-index: 1;visibility:visible;}
+.spinner-container > * { visibility: hidden; }

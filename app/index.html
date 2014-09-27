@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myAppDev" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Menelaus ng UI prototype</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css"/>
+  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+
+<!-- start-content -->
+<nav class="navbar navbar-default navbar-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand">Couchbase</a>
+    </div>
+  </div>
+</nav>
+
+<!--main-->
+<div class="container">
+    <div class="row">
+      <!--left-->
+      <div class="col-md-3" id="leftCol">
+        <ul class="nav nav-stacked" id="sidebar">
+          <li><a ui-sref="app.overview" ui-sref-active="active">Overview</a></li>
+          <li><a ui-sref="app.servers" ui-sref-active="active">Servers</a></li>
+          <li><a ui-sref="app.buckets" ui-sref-active="active">Buckets</a></li>
+        </ul>
+      </div><!--/left-->
+
+      <!--right-->
+      <div class="col-md-9" ui-view>
+        <h2 id="sec0">Content</h2>
+        <p>This is initial thing</p>
+
+        </div><!--/right-->
+    </div><!--/row-->
+</div><!--/container-->
+
+
+<!-- end-content -->
+
+  <script src="js/angular.js"></script>
+  <script src="js/angular-mocks.js"></script>
+  <script src="js/angular-ui-router.js"></script>
+  <script src="js/lodash.compat.js"></script>
+  <script src="js/ui-bootstrap-tpls-0.11.0.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+  <script src="js/mn-hooks.js"></script>
+</body>
+</html>

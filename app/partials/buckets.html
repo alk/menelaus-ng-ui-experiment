@@ -1,0 +1,8 @@
+    <table class="table">
+      <tr ng-repeat-start="bucket in buckets.list">
+        <td><a class="glyphicon glyphicon-chevron-right" ng-click="toggleDetails(bucket.uri); $event.preventDefault();"></a>{{bucket.name}}</td>
+      </tr>
+      <tr ng-repeat-end ng-if="bucketDetails = detailsOf(bucket.uri)">
+        <td>{{bucketDetails | json}}</td>
+      </tr>
+    </table>
